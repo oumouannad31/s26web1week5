@@ -1,0 +1,13 @@
+body{
+    background-color:burlywood;
+}
+
+/* to target an id on the page, use # */
+#container{
+    /* to centre your site on the page, use margin */
+    /* margin is the space around an element (pushing it away from other elements) */
+    /* if you automatically apply an equal amount of space on both sides of an element,
+    it will centre the element */
+    margin: 0 auto;
+    width: 800px;
+}
