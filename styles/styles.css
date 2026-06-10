@@ -1,5 +1,11 @@
 body{
-    background-color:burlywood;
+    background-color:rgb(25,25,25);
+    /* you can define colour using red, green and blue - like photoshop*/
+    color: white;
+    /* (almost) every element inside the body will inherit this text color, so you don't have to style every element separately */
+
+    /* to change the font, use font-family - this is also an inherited property */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* to target an id on the page, use # */
@@ -11,3 +17,30 @@ body{
     margin: 0 auto;
     width: 800px;
 }
+/* the CSS box model goes:
+margin: space between element
+border: 
+padding: space between content and the edge of the page
+*/
+h3{
+    background-color: rgb (green);
+    /* when adding a border, you need three rules:
+    colour
+    size
+    type (ie. solid, dashed, dotted, etc.)
+    */
+    border: black 5px dotted
+
+     /*with padding, if you only give it one value, it applies the same amount of space on both sides */
+     padding: 15px;
+
+     /* with margin and padding, two values means applying to top-bottom (first-value), left-right (second value) */
+     margin/: 10px 0;
+}
+
+/* since links have a efault style in the browser, we need to style them directly to override this*/
+a{
+    color: rgb(169, 232, 255);
+}
+
+footer
