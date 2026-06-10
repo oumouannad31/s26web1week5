@@ -41,6 +41,11 @@ h3{
      margin: 10px 0;
 }
 
+/* you can style multiple elements at the same time using a , */
+h1, h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 /* since links have a default style in the browser, we need 
 to style them directly to override this*/
 a{
