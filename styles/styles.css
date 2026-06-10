@@ -41,12 +41,17 @@ h3{
      margin: 10px 0;
 }
 
+/* since links have a default style in the browser, we need 
+to style them directly to override this*/
+a{
+    color: rgb(169, 232, 255);
+}
+
 a{
     color: aqua;
     /* to remove the underline... */
     text-decoration: none;
 }
-
 
 /* to change the link in different "states", use pseudo-classes
  - like with the hover state */
@@ -54,21 +59,12 @@ a:hover{
     color: aquamarine;
 }
 
-/* since links have a default style in the browser, we need 
-to style them directly to override this*/
-a{
-    color: rgb(169, 232, 255);
-
-}
-
 /* change the link when the user clicks (important for mobile) */
 a:active{
     color: rgb(192, 37, 176);
 }
-
 /* there is also a visited state, if the user has been to the 
 page before... but that one isn't used often*/
-
 
 footer {
     /* sometimes you do just want space on one side of an element...*/
