@@ -17,6 +17,7 @@ body{
     margin: 0 auto;
     width: 800px;
 }
+
 /* the CSS box model goes:
 margin: space between element
 border: 
@@ -29,18 +30,61 @@ h3{
     size
     type (ie. solid, dashed, dotted, etc.)
     */
-    border: black 5px dotted
+    border: black 5px dotted;
 
-     /*with padding, if you only give it one value, it applies the same amount of space on both sides */
+     /*with padding, if you only give it one value, it applies 
+     the same amount of space on both sides */
      padding: 15px;
 
-     /* with margin and padding, two values means applying to top-bottom (first-value), left-right (second value) */
-     margin/: 10px 0;
+     /* with margin and padding, two values means applying to 
+     top-bottom (first-value), left-right (second value) */
+     margin: 10px 0;
 }
 
-/* since links have a efault style in the browser, we need to style them directly to override this*/
+a{
+    color: aqua;
+    /* to remove the underline... */
+    text-decoration: none;
+}
+
+
+/* to change the link in different "states", use pseudo-classes
+ - like with the hover state */
+a:hover{
+    color: aquamarine;
+}
+
+/* since links have a default style in the browser, we need 
+to style them directly to override this*/
 a{
     color: rgb(169, 232, 255);
+
 }
 
-footer
+/* change the link when the user clicks (important for mobile) */
+a:active{
+    color: rgb(192, 37, 176);
+}
+
+/* there is also a visited state, if the user has been to the 
+page before... but that one isn't used often*/
+
+
+footer {
+    /* sometimes you do just want space on one side of an element...*/
+    padding-left: 20px;
+}
+
+/* using space means go inside the first element to look for the
+ second... this example targets only p elements inside the footer */
+
+p{
+    font-size: 12px;
+}
+
+/* sometimes you want to style multiple elements the same way, 
+but can't target them based on tag name - for this, you can use 
+class to target a class, use a . before the name */
+.larger{
+    font-size: 24px;
+}
