@@ -49,10 +49,6 @@ h1, h3 {
 /* since links have a default style in the browser, we need 
 to style them directly to override this*/
 a{
-    color: rgb(169, 232, 255);
-}
-
-a{
     color: aqua;
     /* to remove the underline... */
     text-decoration: none;
@@ -70,6 +66,9 @@ a:active{
 }
 /* there is also a visited state, if the user has been to the 
 page before... but that one isn't used often*/
+a{
+    color: rgb(169, 232, 255);
+}
 
 footer {
     /* sometimes you do just want space on one side of an element...*/
@@ -78,8 +77,9 @@ footer {
 
 /* using space means go inside the first element to look for the
  second... this example targets only p elements inside the footer */
+ /* 0002 - two tag names targets */
 
-p{
+footer p{
     font-size: 12px;
 }
 
@@ -88,4 +88,28 @@ but can't target them based on tag name - for this, you can use
 class to target a class, use a . before the name */
 .larger{
     font-size: 24px;
+}
+
+/* order in CSS matters, but some targets are more important than others...*/
+/* the order goes: 
+tag name
+class
+id
+    specificity value 
+    0000 - "important", "id", "class", "tag"
+/*
+ 
+/* 0100 - one id target */
+#tophead{
+    color: red;
+}
+
+h1{
+    color: deeppink;
+}
+
+/* you can chage the style of a list using list-style */
+ul{
+    list-style: square; /* would make bullet square */
+    /* list-style
 }
